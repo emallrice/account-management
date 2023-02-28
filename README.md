@@ -11,19 +11,16 @@ This is a Java Maven web application for account management, which provides CRUD
 
 ### Usage
 
-Once the application is deployed, you can access it in your web browser by navigating to: `http://localhost:8080/account-management`
+Once the application is deployed, you can access it in your web browser by navigating to `http://localhost:8080/account-management`.
+![source code account management]()
 
 ### Testing
 
-This application using TestNG testing framework for testing. Note that these tests do not use Selenium.
+This application using TestNG testing framework for testing.
 
-### Screenshorts
+![source code account management - test]()
 
-![source code account management]()
-
-![source code account management]()
-
-![source code account management]()
+Note that these tests do not use Selenium.
 
 ### Contributing
 
