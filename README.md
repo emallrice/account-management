@@ -20,7 +20,9 @@ This application using TestNG testing framework for testing. Note that these tes
 ### Screenshorts
 
 ![source code account management]()
+
 ![source code account management]()
+
 ![source code account management]()
 
 ### Contributing
@@ -29,6 +31,6 @@ If you find a bug or want to suggest an enhancement, please submit an issue or p
 
 ### License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the `MIT License`.
 
 Copyright &#169; 2023 Team 3 - SWT301
