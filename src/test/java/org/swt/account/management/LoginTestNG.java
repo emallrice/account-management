@@ -11,8 +11,8 @@ import static org.testng.Assert.*;
  * @author Yemufu
  */
 public class LoginTestNG {
-    
+
     public LoginTestNG() {
     }
-    
+
 }
