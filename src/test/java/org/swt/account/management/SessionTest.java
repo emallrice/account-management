@@ -10,6 +10,8 @@ import javax.servlet.http.HttpSession;
 import org.swt.account.management.dto.MockHttpServletRequest;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 /**
@@ -17,13 +19,24 @@ import org.testng.annotations.Test;
  * @author Triệu
  */
 public class SessionTest {
+    private HttpServletRequest request;
+    private HttpSession session;
+    
+    @BeforeTest
+    public void setUp() {
+        request = new MockHttpServletRequest();
+        session = request.getSession();
+    }
 
+    @AfterTest
+    public void tearDown() {
+        session.invalidate();
+    }
+    
     //Test case 1
     //Add an attribute to session
     @Test
     public void testSession() {
-        HttpServletRequest request = new MockHttpServletRequest() {};
-        HttpSession session = request.getSession();
         session.setAttribute("username", "testuser");
         String username = (String) session.getAttribute("username");
         Assert.assertEquals(username, "testuser");
@@ -33,8 +46,6 @@ public class SessionTest {
     //Test invalidate session with time out session time
     @Test
     public void testSessionTimeout() throws InterruptedException {
-        HttpServletRequest request = new MockHttpServletRequest();
-        HttpSession session = request.getSession();
         session.setAttribute("username", "testuser");
         int sessionTime=3500;
         Thread.sleep(sessionTime);
