@@ -12,6 +12,14 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <section>  
+            <h1>Đăng nhập</h1>
+            <form method="post" action="Login_Servlet">
+                Email: <input type="text" name="email" value="trongtruong@gmail.com"><br>
+                Mật khẩu: <input type="password" name="password" value="1111"><br>
+                <!--<input type="submit" value="Đăng nhập">-->
+                <button type="submit" value="login">Đăng nhập</button>
+            </form>
+        </section>
     </body>
 </html>
